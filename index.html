@@ -3,15 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./static/normalize.css"> -->
-    <script src="./static/flex.js"></script>
+    <!-- <script src="./static/flex.js"></script> -->
     <title>vueshop</title>
   </head>
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
     <script>
-     
+     //得到手机屏幕的宽度
+let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+//得到html的Dom元素
+let htmlDom = document.getElementsByTagName('html')[0];
+//设置根元素字体大小
+htmlDom.style.fontSize= htmlWidth/20 + 'px';
     </script>
   </body>
 </html>
